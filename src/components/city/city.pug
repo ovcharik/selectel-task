@@ -1,11 +1,13 @@
-h2 {{$ctrl.details.city.name}}, {{$ctrl.details.city.country}}
+h2.title {{$ctrl.details.city.name}}, {{$ctrl.details.city.country}}
 
-select(ng-model='$ctrl.sortBy')
-  option(value='+dt') По дате по возрастанию
-  option(value='-dt') По дате по убыванию
-  option(value='+temp.day') По температуре по возрастанию
-  option(value='-temp.day') По температуре по убыванию
+div.sort
+  | Сортировка: 
+  select(ng-model='$ctrl.sortBy')
+    option(value='+dt') По дате по возрастанию
+    option(value='-dt') По дате по убыванию
+    option(value='+temp.day') По температуре по возрастанию
+    option(value='-temp.day') По температуре по убыванию
 
-ul(ng-repeat='item in $ctrl.details.list | orderBy:$ctrl.sortBy')
-  li
+ul.list
+  li.item(ng-repeat='item in $ctrl.details.list | orderBy:$ctrl.sortBy')
     weather-item(data='item')
