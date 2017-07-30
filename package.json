@@ -10,8 +10,8 @@
   "author": "maksim.ovcharik@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.5",
     "angular": "^1.6.5",
-    "angular-ui-router": "^1.0.3",
     "moment": "^2.18.1"
   },
   "devDependencies": {

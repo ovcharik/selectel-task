@@ -1,7 +1,7 @@
 import './styles/index.less';
 
 import angular  from 'angular';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 
 import * as appConfig from './config';
 import appComponents  from './components';
