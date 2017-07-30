@@ -4,7 +4,7 @@
   "description": "Test task for Selectel. Weather.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js",
+    "start": "webpack-dev-server -d --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
   "author": "maksim.ovcharik@gmail.com",

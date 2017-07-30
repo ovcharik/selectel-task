@@ -19,10 +19,13 @@ module.exports = {
     rules: [
       {
         test: /\.(pug|jade)$/,
+        include: [
+          path.resolve(__dirname, 'src/templates'),
+        ],
         use: ExtractTextPlugin.extract({
           use: [
             {
-              loader: 'html-loader'
+              loader: 'html-loader',
             },
             {
               loader: 'pug-html-loader',
@@ -30,6 +33,16 @@ module.exports = {
             },
           ],
         }),
+      },
+      {
+        test: /\.(pug|jade)$/,
+        include: [
+          path.resolve(__dirname, 'src/components'),
+        ],
+        use: [
+          'html-loader',
+          'pug-html-loader',
+        ],
       },
       {
         test: /\.js$/,
