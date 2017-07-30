@@ -5,5 +5,6 @@ export default {
     details: '<',
   },
   controller: function() {
+    this.sortBy = '+dt';
   },
 }
