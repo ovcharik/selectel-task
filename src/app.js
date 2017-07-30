@@ -1,7 +1,5 @@
 import './styles/index.less';
 
-import _ from 'underscore';
-
 import angular  from 'angular';
 import uiRouter from 'angular-ui-router';
 
