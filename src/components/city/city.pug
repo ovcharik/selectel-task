@@ -1,0 +1,5 @@
+h2 {{$ctrl.details.city.name}}, {{$ctrl.details.city.country}}
+
+ul(ng-repeat='item in $ctrl.details.list')
+  li
+    weather-item(data='item')

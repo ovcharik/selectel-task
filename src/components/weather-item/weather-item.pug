@@ -1,0 +1,12 @@
+div Дата: {{$ctrl.dt2date($ctrl.data.dt)}}
+
+div Дневная температура: {{$ctrl.data.temp.day}}
+div Ночная температура : {{$ctrl.data.temp.night}}
+
+div Давление : {{$ctrl.pa2merc($ctrl.data.pressure)}} мм рт. ст.
+div Влажность: {{$ctrl.data.humidity}}%
+
+div Скорость ветра: {{$ctrl.data.speed}} м/с
+div Направление ветра: {{$ctrl.data.deg}}
+
+div Облачность: {{$ctrl.clouds}}%
