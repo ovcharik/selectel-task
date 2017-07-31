@@ -7,7 +7,7 @@ import * as appConfig from './config';
 import appComponents  from './components';
 import appServices    from './services';
 
-let app = angular
+const app = angular
   .module('app', [
     'ui.router',
     'app.services',

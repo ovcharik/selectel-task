@@ -44,7 +44,7 @@ export const weatherApiHttp = ($httpProvider) => {
     return {
       request: (config) => {
         if (/api\.openweathermap\.org\/data/.test(config.url)) {
-          config.params = config.params || [];
+          config.params = config.params || {};
           config.params['appid'] = appConfig.OPEN_WEATHER_MAP_APP_ID;
         }
         return config;
